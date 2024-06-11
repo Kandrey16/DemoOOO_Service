@@ -1,0 +1,31 @@
+﻿<Window x:Class="ООО_Техносервис_2.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ООО_Техносервис_2"
+        mc:Ignorable="d"
+        Title="AuthWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="2" Content="Логин"/>
+        <Label Grid.Column="0" Grid.Row="3" Content="Пароль"/>
+
+        <TextBox Name="tbxLogin" Text="admin@yandex.ru" Grid.Column="1" Grid.Row="2"/>
+        <PasswordBox Name="tbxPassword" Password="pa$$123" Grid.Column="1" Grid.Row="3"/>
+        <Button Name="btnAuth" Click="btnAuth_Click" Content="Авторизация" Grid.Column="1" Grid.Row="4"/>
+    </Grid>
+</Window>
